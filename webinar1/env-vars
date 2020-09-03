@@ -1,0 +1,5 @@
+#!/bin/bash
+export XX_CCLOUD_ENV=t36874
+export XX_CCLOUD_EMAIL=cmutzlitz+secemea@confluent.io
+export XX_CCLOUD_PASSWORD=peter9897Pan#
+export XX_CCLOUD_CLUSTERNAME=CMDATAFLOW
