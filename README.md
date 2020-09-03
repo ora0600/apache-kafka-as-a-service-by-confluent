@@ -1,38 +1,30 @@
-Webinar Serie: 
-Apache Kafka as a Service in GCP, Azure and AWS by Confluent fully managed
+# Webinar Serie: Apache Kafka as a Service in GCP, Azure and AWS by Confluent fully managed
 
+A deep dive Webinar serie: Apache Kafka as a Service in GCP, Azure and AWS by Confluent
+focused on these main Confluent Kafka components
+* Kafka in general,
+* Connect,
+* Schema Registry,
+* Kafka Streams,
+* CP Ansible,
+* and Confluent Cloud
 
-Based on current survey results the most attractive Confluent components are:
-Kafka in general,
-Connect,
-Schema Registry,
-Kafka Streams,
-CP Ansible,
-and Confluent Cloud
+## Presenters from Confluent:
+* Jan Svoboda
+* Suvad Sahovic
+* Carsten Mützlitz
 
+## Attendees:
+* All industries, all titles 
 
-Based on this result SE CEMEA will attract our customers with a deep dive Webinar serie:  
-Apache Kafka as a Service in GCP, Azure and AWS by Confluent
+## Webinar content:
+### Title: Apache Kafka as a Service - Kafka in der Cloud - in GCP, Azure and AWS by Confluent fully-managed
+A webinar serie with  5  deep dive session
 
-
-Presenters from Confluent:
-Jan Svoboda
-Suvad Sahovic
-Carsten Mützlitz
-Attendees:
-All industries, all titles 
-Webinar content:
-
-Title: Apache Kafka as a Service - Kafka in der Cloud - in GCP, Azure and AWS by Confluent fully-managed
-A webinar serie with  5  deep dive session, each week 1 session starting End of September
-½ day Confluent Cloud accelerator package by SE
-Promotion code 100-200$ 
-Promotion condition: only for real use cases
-
-Content of the serie:
+### Content of the serie:
 Based on real stories like price scaping, marketing channels in telegram, micro services platform and AR APP Confluent will explain how easy it is to work with Confluent Cloud.
 
-Webinar Serie
+### Webinar Serie
 Structure of a session:
 Start with an overview - what to achieve
 Wrap-up of last session (if this is not the first session)
@@ -42,44 +34,48 @@ Step-by-Step explanation based on the current use case
 Automatic script and explanation
 Wrap-up and what is coming next
 
-Webinar: Apache Kafka as a Service by Confluent Cloud Overview
+### 1.Webinar: Apache Kafka as a Service by Confluent Cloud Overview
 ccloud overview
 => Subscription types (direkt, marketplace)
 => create Cluster (UI, cli)
 => Data Flow
-        	=> Monitoring / Compliance
-    	=> Schema Registry
-        		=> different formats (JSON, AVRO)
+    => Monitoring / Compliance
+    => Schema Registry
+    => different formats (JSON, AVRO)
 => Topics
-        		=> Message Browser
-        		=> Producer   
-		=> Consumer
+    => Message Browser
+    => Producer   
+    => Consumer
 => API Monitoring
 Security Session:
 => User Management 
 => ACL and service Account
-	=> RBAC in der CCloud
+=> RBAC in Confluent Cloud
 => Authentication and Authorization
-=> Audit Logs in der CCloud
+=> Audit Logs in der Confluent Cloud
 => SSO
-Webinar: Using Connector with Apache Kafka as a Service, self-managed and fully-managed
+
+### 2.Webinar: Using Connector with Apache Kafka as a Service, self-managed and fully-managed
 Fully managed connectors
     => DataGen Connector
     => S3/Azure Blob
 Self-Managed connectors
      => RSS feed connector
      => Replicator (OnPrem -> CCloud -> OnPrem)
-Webinar: Doing Analytics with Apache Kafka as Service
+
+### 3.Webinar: Doing Analytics with Apache Kafka as Service
 ksqlDB
-Webinar: Connectivity possibilities with Apache Kafka as Service in Cloud
+
+### 4.Webinar: Connectivity possibilities with Apache Kafka as Service in Cloud
 => Internet Endpoints
 => VPC/VNet Peering
 => Private Link
 => HA Proxy
 => kafka-Proxy
 => site-to-site VPN
-=> (TGW)
-Webinar: cost optimization, total cost of ownership
+=> (Transit Gateway)
+
+### 5.Webinar: cost optimization, total cost of ownership
 compression
 Avro/SR
 multi-tenancy (chargeBack: Throughput per Topics * price factor)
@@ -89,13 +85,5 @@ Use of managed CP enterprise components with Confluent Cloud
 Fully-managed vs. Self-managed components
 TCO on-prem vs. Ccloud
 
-Promotions:
-½ day Confluent Cloud accelerator package by SE
-Promotion code 100-200$ 
-Promotion condition: only for real use cases
-
-Next Steps:
-Send to Evi
-Setup registration
-execute
-
+# License / Costs
+To play around with these samples here, you need to have a Confluent Cloud account.
