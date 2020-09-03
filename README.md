@@ -26,16 +26,16 @@ Based on real stories like price scaping, marketing channels in telegram, micro 
 
 ### Webinar Serie
 Structure of a session:
-Start with an overview - what to achieve
-Wrap-up of last session (if this is not the first session)
-Only a few slides
-We running live
-Step-by-Step explanation based on the current use case
-Automatic script and explanation
-Wrap-up and what is coming next
+  * Start with an overview - what to achieve
+  * Wrap-up of last session (if this is not the first session)
+  * Only a few slides
+  * We running live
+  * Step-by-Step explanation based on the current use case
+  * Automatic script and explanation
+  * Wrap-up and what is coming next
 
 ### 1.Webinar: Apache Kafka as a Service by Confluent Cloud Overview
-ccloud overview
+  * ccloud overview
 => Subscription types (direkt, marketplace)
 => create Cluster (UI, cli)
 => Data Flow
