@@ -35,55 +35,61 @@ Structure of a session:
   * Wrap-up and what is coming next
 
 ### 1.Webinar: Apache Kafka as a Service by Confluent Cloud Overview
-  * ccloud overview
-=> Subscription types (direkt, marketplace)
-=> create Cluster (UI, cli)
-=> Data Flow
-    => Monitoring / Compliance
-    => Schema Registry
-    => different formats (JSON, AVRO)
-=> Topics
-    => Message Browser
-    => Producer   
-    => Consumer
-=> API Monitoring
-Security Session:
-=> User Management 
-=> ACL and service Account
-=> RBAC in Confluent Cloud
-=> Authentication and Authorization
-=> Audit Logs in der Confluent Cloud
-=> SSO
+  * Confluent Cloud Service overview
+    * Subscription types (direkt, marketplace)
+    * create Cluster (UI, cli)
+    * Monitoring / Compliance
+      * Data flow
+      * Schema Registry (JSON/AVRO/PROTOBUF)
+      * Matric API Monitoring
+    * Topics Management
+      * Message Browser
+      * Producer   
+      * Consumer
+  * Security Session:
+    * User Management 
+    * ACL and service Account
+    * RBAC in Confluent Cloud
+    * Authentication and Authorization
+      * Client Access
+    * Audit Logs in der Confluent Cloud
+    * SSO
 
 ### 2.Webinar: Using Connector with Apache Kafka as a Service, self-managed and fully-managed
-Fully managed connectors
-    => DataGen Connector
-    => S3/Azure Blob
-Self-Managed connectors
-     => RSS feed connector
-     => Replicator (OnPrem -> CCloud -> OnPrem)
+  * Fully managed connectors
+    * DataGen Connector
+    * S3/Azure Blob
+  * Self-Managed connectors
+     * RSS feed connector
+     * Replicator (OnPrem -> CCloud -> OnPrem)
 
 ### 3.Webinar: Doing Analytics with Apache Kafka as Service
-ksqlDB
+  * Provision ksqlDB APP
+    * generate Data
+    * do analytics in a realtime on streams of events
 
 ### 4.Webinar: Connectivity possibilities with Apache Kafka as Service in Cloud
-=> Internet Endpoints
-=> VPC/VNet Peering
-=> Private Link
-=> HA Proxy
-=> kafka-Proxy
-=> site-to-site VPN
-=> (Transit Gateway)
+How to access the Confluent Cloud and deal with different connectivities
+ * Internet Endpoints
+ * VPC/VNet Peering
+ * Private Link
+ * HA Proxy
+ * kafka-Proxy
+ * site-to-site VPN
+ * (Transit Gateway)
 
 ### 5.Webinar: cost optimization, total cost of ownership
-compression
-Avro/SR
-multi-tenancy (chargeBack: Throughput per Topics * price factor)
-Automatic test, serverless Kafka (startup and shutdown)
-Infinite storage
-Use of managed CP enterprise components with Confluent Cloud
-Fully-managed vs. Self-managed components
-TCO on-prem vs. Ccloud
+The last session of one of the most importan. What are the costs, benefits, things to know.
+* Cost optimization (less traffic, storage)
+  * compression
+  * Avro/SR
+  * batching
+  * Automatic test, serverless Kafka (startup and shutdown)
+* Infinite storage
+* multi-tenancy (chargeBack: Throughput per Topics * price factor)
+* Use of managed CP enterprise components with Confluent Cloud
+* Fully-managed vs. Self-managed components
+* TCO on-prem vs. Ccloud
 
 # License / Costs
 To play around with these samples here, you need to have a Confluent Cloud account.
