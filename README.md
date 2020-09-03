@@ -34,7 +34,7 @@ Structure of a session:
   * Automatic script and explanation
   * Wrap-up and what is coming next
 
-### [1.Webinar](webinar1/READ.me): Apache Kafka as a Service by Confluent Cloud Overview
+### [1.Webinar](webinar1/Readme.md): Apache Kafka as a Service by Confluent Cloud Overview
   * Confluent Cloud Service overview
     * Subscription types (direkt, marketplace)
     * create Cluster (UI, cli)
