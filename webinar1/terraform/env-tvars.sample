@@ -1,0 +1,6 @@
+export TF_VAR_aws_access_key=your key
+export TF_VAR_aws_secret_key=your secret
+export TF_VAR_aws_region=eu-central-1
+export TF_VAR_ssh_key_name=hackathon-temp-key
+export TF_VAR_instance_count=1
+export TF_VAR_instance_type_resource=t2.micro

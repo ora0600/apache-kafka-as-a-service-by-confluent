@@ -2,7 +2,7 @@
 
 ###### set environment variables
 # CCloud environment CMWORKSHOPS, have to be created before
-source env-vars
+source ccloud-vars
 
 pwd > basedir
 export BASEDIR=$(cat basedir)
@@ -43,15 +43,45 @@ echo "************************************************"
 echo "Cluster is created give it 2 Minutes to start..."
 sleep 120
 
+# enable if Schema registry, if it still enabled, no new will be created
+ccloud schema-registry cluster enable --geo eu --cloud gcp -o yaml > srcluster
+export CCLOUD_SRURL1=$(awk '/endpoint_url/{print $NF}' srcluster)
+export CCLOUD_SRID1=$(awk '/id/{print $NF}' srcluster)
+# create SR KEy, Secret
+ccloud api-key create --resource $CCLOUD_SRID1 --description 'SR Key for webinar1, can be deleted' -o yaml > srkey
+export CCLOUD_SRKEY1=$(awk '/key/{print $NF}' srkey)
+export CCLOUD_SRSECRET1=$(awk '/secret/{print $NF}' srkey)
+
 # create topic
 # topic in ccloud
 #kafka-topics --create --bootstrap-server $(sed 's/|//g' clusterid1 | awk '/Endpoint     SASL_SSL:\/\//{print $NF}' | sed 's/SASL_SSL:\/\///g') --topic cmorders \
 #--replication-factor 3 --partitions 6 --command-config ./ccloud_user1.properties 
 kafka-topics --create --bootstrap-server $CCLOUD_CLUSTERID1_BOOTSTRAP --topic cmorders \
---replication-factor 3 --partitions 6 --command-config ./ccloud_user1.properties 
+--replication-factor 3 --partitions 1 --command-config ./ccloud_user1.properties 
+kafka-topics --create --bootstrap-server $CCLOUD_CLUSTERID1_BOOTSTRAP --topic rssfeeds \
+--replication-factor 3 --partitions 1 --command-config ./ccloud_user1.properties 
 echo "Topic created"
 
-# open Producer and Consumer Terminals
+# create terraform vars
+echo "export TF_VAR_cc_broker_url=${CCLOUD_CLUSTERID1_BOOTSTRAP}
+export TF_VAR_cc_broker_key=${CCLOUD_KEY1}
+export TF_VAR_cc_broker_secret=${CCLOUD_SECRET1}
+export TF_VAR_cc_schema_url=${CCLOUD_SRURL1}
+export TF_VAR_cc_schema_key=${CCLOUD_SRKEY1}
+export TF_VAR_cc_schema_secret=${CCLOUD_SRSECRET1}" > terraform/ccloud-tvars
+
+# Python config file
+echo "bootstrap.servers=${CCLOUD_CLUSTERID1_BOOTSTRAP}
+security.protocol=SASL_SSL
+sasl.mechanisms=PLAIN
+sasl.username=${CCLOUD_KEY1}
+sasl.password=${CCLOUD_SECRET1}
+# Confluent Cloud Schema Registry
+schema.registry.url=${CCLOUD_SRURL1}
+basic.auth.credentials.source=USER_INFO
+schema.registry.basic.auth.user.info=${CCLOUD_SRKEY1}:${CCLOUD_SRSECRET1}" > ccloud.config
+
+#Producer and Consumer Terminals
 echo "Open producer and consumer Terminals with iterm...."
 open -a iterm
 sleep 10
