@@ -60,7 +60,7 @@ Terraform will create a complete setup in AWS and do not start the connector.
 I Prefer to check manually if everything is working.
 ```bash
 # login via ssh
-ssh -i ~/keys/hackathon-temp-key.pem ec2-user@18.159.141.217
+ssh -i ~/keys/hackathon-temp-key.pem ec2-user@public-ip
 
 # do some checks is pythons3 installaed
 python3 --version
@@ -115,7 +115,7 @@ The connector is running. Now our Python Service need to push the data from topi
 Please login into AWS and change the python script to push data to the right channel:
 ```bash
 # login via ssh
-ssh -i ~/keys/hackathon-temp-key.pem ec2-user@18.159.141.217
+ssh -i ~/keys/hackathon-temp-key.pem ec2-user@public-ip
 
 # open the python script and change the correct data
 nano consumer_rssfeeds.py
