@@ -2,7 +2,9 @@
 
 ###### set environment variables
 source ccloud-vars
+
 # CCloud environment CMWORKSHOPS
+BASEDIR=$(cat basedir)
 CCLOUD_CLUSTERID1=$(awk '/id:/{print $NF}' clusterid1)
 CCLOUD_CLUSTERID1_BOOTSTRAP=$(awk '/endpoint: SASL_SSL:\/\//{print $NF}' clusterid1 | sed 's/SASL_SSL:\/\///g')
 CCLOUD_KEY1=$(awk '/key/{print $NF}' apikey1)
@@ -21,15 +23,19 @@ ccloud api-key delete $CCLOUD_SRKEY1
 # Delete cluster
 ccloud kafka cluster delete $CCLOUD_CLUSTERID1
 
+# list kafka clusters
+ccloud kafka cluster list
+
 # Delete files
-rm basedir
-rm apikey1
-rm ccloud_user1.properties
-rm clusterid1
-rm srcluster
-rm srkey
-rm ccloud.config
-rm terraform/ccloud-tvars
+echo "delete generated files rom disk"
+rm -rf $BASEDIR/basedir
+rm -rf $BASEDIR/apikey1
+rm -rf $BASEDIR/ccloud_user1.properties
+rm -rf $BASEDIR/clusterid1
+rm -rf $BASEDIR/srcluster
+rm -rf $BASEDIR/srkey
+rm -rf $BASEDIR/ccloud.config
+rm -rf $BASEDIR/terraform/ccloud-tvars
 
 # Finish
 echo "Cluster $XX_CCLOUD_CLUSTERNAME dropped"

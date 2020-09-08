@@ -55,10 +55,10 @@ Structure of a session:
     * Audit Logs in der Confluent Cloud
     * SSO
 
-### 2.Webinar: Using Connector with Apache Kafka as a Service, self-managed and fully-managed
+### [2.Webinar](webinar2/Readme.md): Using Connector with Apache Kafka as a Service, self-managed and fully-managed
   * Fully managed connectors
-    * DataGen Connector
-    * S3/Azure Blob
+    * DataGen Connector Users
+    * Datagen Connector Pageviews
   * Self-Managed connectors
      * RSS feed connector
      * Replicator (OnPrem -> CCloud -> OnPrem)

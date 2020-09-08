@@ -1,0 +1,5 @@
+#/bin/bash
+export XX_CCLOUD_ENV=ID of environment in ccloud
+export XX_CCLOUD_EMAIL= your email login to ccloud
+export XX_CCLOUD_PASSWORD= your password to ccloud
+export XX_CCLOUD_CLUSTERNAME2=Name of Target cluster
