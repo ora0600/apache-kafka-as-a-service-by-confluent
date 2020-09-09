@@ -63,7 +63,7 @@ Structure of a session:
      * RSS feed connector
      * Replicator (OnPrem -> CCloud -> OnPrem)
 
-### 3.Webinar: Doing Analytics with Apache Kafka as Service
+### [3.Webinar](webinar3/Readme.md): Doing Analytics with Apache Kafka as Service
   * Provision ksqlDB APP
     * generate Data
     * do analytics in a realtime on streams of events
