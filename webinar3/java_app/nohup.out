@@ -1,0 +1,1036 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< jans:SalesSite >---------------------------
+[INFO] Building SalesSite 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) > test-compile @ SalesSite >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) < test-compile @ SalesSite <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) @ SalesSite ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-06-23 09:31:14.565  INFO 25189 --- [           main] jans.SalesSite.SalesSiteApplication      : Starting SalesSiteApplication on CarstenitzMBP15 with PID 25189 (/Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/target/classes started by cmutzlitz in /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app)
+2020-06-23 09:31:14.567  INFO 25189 --- [           main] jans.SalesSite.SalesSiteApplication      : No active profile set, falling back to default profiles: default
+2020-06-23 09:31:15.303  INFO 25189 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-23 09:31:15.310  INFO 25189 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-23 09:31:15.310  INFO 25189 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 09:31:15.363  INFO 25189 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-23 09:31:15.363  INFO 25189 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 757 ms
+2020-06-23 09:31:15.469  INFO 25189 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 09:31:15.599  INFO 25189 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-23 09:31:15.605  INFO 25189 --- [           main] jans.SalesSite.SalesSiteApplication      : Started SalesSiteApplication in 1.332 seconds (JVM running for 1.625)
+2020-06-23 09:32:01.969  INFO 25189 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-23 09:32:01.970  INFO 25189 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-23 09:32:01.976  INFO 25189 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+[{"header":{"queryId":"none","schema":"`OURPRICE` DOUBLE"}},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"row":{"columns":[1187.01]}},
+{"finalMessage":"Limit Reached"}]
+
+[{"header":{"queryId":"none","schema":"`OURPRICE` DOUBLE"}},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"row":{"columns":[1187.01]}},
+{"finalMessage":"Limit Reached"}]
+
+[{"header":{"queryId":"none","schema":"`OURPRICE` DOUBLE"}},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"row":{"columns":[1187.01]}},
+{"finalMessage":"Limit Reached"}]
+
+[{"header":{"queryId":"none","schema":"`OURPRICE` DOUBLE"}},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"row":{"columns":[1187.01]}},
+{"finalMessage":"Limit Reached"}]
+
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< jans:SalesSite >---------------------------
+[INFO] Building SalesSite 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) > test-compile @ SalesSite >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) < test-compile @ SalesSite <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) @ SalesSite ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-06-23 09:36:02.541  INFO 25406 --- [           main] jans.SalesSite.SalesSiteApplication      : Starting SalesSiteApplication on CarstenitzMBP15 with PID 25406 (/Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/target/classes started by cmutzlitz in /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app)
+2020-06-23 09:36:02.543  INFO 25406 --- [           main] jans.SalesSite.SalesSiteApplication      : No active profile set, falling back to default profiles: default
+2020-06-23 09:36:03.064  INFO 25406 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-23 09:36:03.070  INFO 25406 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-23 09:36:03.070  INFO 25406 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 09:36:03.113  INFO 25406 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-23 09:36:03.114  INFO 25406 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 543 ms
+2020-06-23 09:36:03.213  INFO 25406 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 09:36:03.315  WARN 25406 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2020-06-23 09:36:03.316  INFO 25406 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 09:36:03.318  INFO 25406 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-23 09:36:03.326  INFO 25406 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 09:36:03.329 ERROR 25406 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.419 s
+[INFO] Finished at: 2020-06-23T09:36:03+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) on project SalesSite: Application finished with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< jans:SalesSite >---------------------------
+[INFO] Building SalesSite 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) > test-compile @ SalesSite >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) < test-compile @ SalesSite <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) @ SalesSite ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-06-23 09:37:04.059  INFO 25476 --- [           main] jans.SalesSite.SalesSiteApplication      : Starting SalesSiteApplication on CarstenitzMBP15 with PID 25476 (/Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/target/classes started by cmutzlitz in /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app)
+2020-06-23 09:37:04.062  INFO 25476 --- [           main] jans.SalesSite.SalesSiteApplication      : No active profile set, falling back to default profiles: default
+2020-06-23 09:37:04.784  INFO 25476 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-23 09:37:04.792  INFO 25476 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-23 09:37:04.792  INFO 25476 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 09:37:04.843  INFO 25476 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-23 09:37:04.843  INFO 25476 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 744 ms
+2020-06-23 09:37:04.977  INFO 25476 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 09:37:05.121  WARN 25476 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2020-06-23 09:37:05.121  INFO 25476 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 09:37:05.123  INFO 25476 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-23 09:37:05.132  INFO 25476 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 09:37:05.137 ERROR 25476 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.737 s
+[INFO] Finished at: 2020-06-23T09:37:05+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) on project SalesSite: Application finished with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< jans:SalesSite >---------------------------
+[INFO] Building SalesSite 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) > test-compile @ SalesSite >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) < test-compile @ SalesSite <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) @ SalesSite ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-06-23 09:38:20.109  INFO 25666 --- [           main] jans.SalesSite.SalesSiteApplication      : Starting SalesSiteApplication on CarstenitzMBP15 with PID 25666 (/Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/target/classes started by cmutzlitz in /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app)
+2020-06-23 09:38:20.111  INFO 25666 --- [           main] jans.SalesSite.SalesSiteApplication      : No active profile set, falling back to default profiles: default
+2020-06-23 09:38:20.651  INFO 25666 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-23 09:38:20.657  INFO 25666 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-23 09:38:20.657  INFO 25666 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 09:38:20.696  INFO 25666 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-23 09:38:20.696  INFO 25666 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 556 ms
+2020-06-23 09:38:20.789  INFO 25666 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 09:38:20.891  INFO 25666 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-23 09:38:20.897  INFO 25666 --- [           main] jans.SalesSite.SalesSiteApplication      : Started SalesSiteApplication in 1.02 seconds (JVM running for 1.271)
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< jans:SalesSite >---------------------------
+[INFO] Building SalesSite 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) > test-compile @ SalesSite >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) < test-compile @ SalesSite <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) @ SalesSite ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-06-23 09:47:32.822  INFO 26171 --- [           main] jans.SalesSite.SalesSiteApplication      : Starting SalesSiteApplication on CarstenitzMBP15 with PID 26171 (/Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/target/classes started by cmutzlitz in /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app)
+2020-06-23 09:47:32.823  INFO 26171 --- [           main] jans.SalesSite.SalesSiteApplication      : No active profile set, falling back to default profiles: default
+2020-06-23 09:47:33.341  INFO 26171 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-23 09:47:33.347  INFO 26171 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-23 09:47:33.347  INFO 26171 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 09:47:33.382  INFO 26171 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-23 09:47:33.382  INFO 26171 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 534 ms
+2020-06-23 09:47:33.466  INFO 26171 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 09:47:33.553  WARN 26171 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2020-06-23 09:47:33.553  INFO 26171 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-23 09:47:33.555  INFO 26171 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-23 09:47:33.561  INFO 26171 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-23 09:47:33.564 ERROR 26171 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.332 s
+[INFO] Finished at: 2020-06-23T09:47:33+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) on project SalesSite: Application finished with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< jans:SalesSite >---------------------------
+[INFO] Building SalesSite 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) > test-compile @ SalesSite >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) < test-compile @ SalesSite <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) @ SalesSite ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-06-23 09:48:28.049  INFO 26314 --- [           main] jans.SalesSite.SalesSiteApplication      : Starting SalesSiteApplication on CarstenitzMBP15 with PID 26314 (/Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/target/classes started by cmutzlitz in /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app)
+2020-06-23 09:48:28.051  INFO 26314 --- [           main] jans.SalesSite.SalesSiteApplication      : No active profile set, falling back to default profiles: default
+2020-06-23 09:48:28.585  INFO 26314 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-23 09:48:28.591  INFO 26314 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-23 09:48:28.591  INFO 26314 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 09:48:28.627  INFO 26314 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-23 09:48:28.628  INFO 26314 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 548 ms
+2020-06-23 09:48:28.718  INFO 26314 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 09:48:28.814  INFO 26314 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-23 09:48:28.820  INFO 26314 --- [           main] jans.SalesSite.SalesSiteApplication      : Started SalesSiteApplication in 0.968 seconds (JVM running for 1.188)
+2020-06-23 09:49:43.603  INFO 26314 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< jans:SalesSite >---------------------------
+[INFO] Building SalesSite 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) > test-compile @ SalesSite >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) < test-compile @ SalesSite <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) @ SalesSite ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-06-23 10:05:49.192  INFO 26808 --- [           main] jans.SalesSite.SalesSiteApplication      : Starting SalesSiteApplication on CarstenitzMBP15 with PID 26808 (/Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/target/classes started by cmutzlitz in /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app)
+2020-06-23 10:05:49.195  INFO 26808 --- [           main] jans.SalesSite.SalesSiteApplication      : No active profile set, falling back to default profiles: default
+2020-06-23 10:05:49.953  INFO 26808 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-23 10:05:49.964  INFO 26808 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-23 10:05:49.965  INFO 26808 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-23 10:05:50.017  INFO 26808 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-23 10:05:50.018  INFO 26808 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 782 ms
+2020-06-23 10:05:50.130  INFO 26808 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-23 10:05:50.272  INFO 26808 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-23 10:05:50.279  INFO 26808 --- [           main] jans.SalesSite.SalesSiteApplication      : Started SalesSiteApplication in 1.405 seconds (JVM running for 1.759)
+2020-06-23 10:06:45.611  INFO 26808 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-23 10:06:45.612  INFO 26808 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-23 10:06:45.619  INFO 26808 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:30 min
+[INFO] Finished at: 2020-06-23T10:08:17+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) on project SalesSite: Application finished with exit code: 137 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< jans:SalesSite >---------------------------
+[INFO] Building SalesSite 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) > test-compile @ SalesSite >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) < test-compile @ SalesSite <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) @ SalesSite ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-06-24 15:37:20.637  INFO 83154 --- [           main] jans.SalesSite.SalesSiteApplication      : Starting SalesSiteApplication on CarstenitzMBP15 with PID 83154 (/Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/target/classes started by cmutzlitz in /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app)
+2020-06-24 15:37:20.640  INFO 83154 --- [           main] jans.SalesSite.SalesSiteApplication      : No active profile set, falling back to default profiles: default
+2020-06-24 15:37:21.473  INFO 83154 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-24 15:37:21.484  INFO 83154 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-24 15:37:21.484  INFO 83154 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-24 15:37:21.607  INFO 83154 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-24 15:37:21.607  INFO 83154 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 927 ms
+2020-06-24 15:37:21.754  INFO 83154 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-24 15:37:21.903  INFO 83154 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-24 15:37:21.911  INFO 83154 --- [           main] jans.SalesSite.SalesSiteApplication      : Started SalesSiteApplication in 1.599 seconds (JVM running for 3.128)
+2020-06-24 15:41:08.259  INFO 83154 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-24 15:41:08.259  INFO 83154 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-24 15:41:08.265  INFO 83154 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+[{"header":{"queryId":"none","schema":"`OURPRICE` DOUBLE"}},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"row":{"columns":[1187.01]}},
+{"finalMessage":"Limit Reached"}]
+
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< jans:SalesSite >---------------------------
+[INFO] Building SalesSite 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) > test-compile @ SalesSite >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) < test-compile @ SalesSite <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) @ SalesSite ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-06-25 14:46:03.128  INFO 7994 --- [           main] jans.SalesSite.SalesSiteApplication      : Starting SalesSiteApplication on CarstenitzMBP15 with PID 7994 (/Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/target/classes started by cmutzlitz in /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app)
+2020-06-25 14:46:03.130  INFO 7994 --- [           main] jans.SalesSite.SalesSiteApplication      : No active profile set, falling back to default profiles: default
+2020-06-25 14:46:04.039  INFO 7994 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-25 14:46:04.051  INFO 7994 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-25 14:46:04.052  INFO 7994 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-25 14:46:04.182  INFO 7994 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-25 14:46:04.183  INFO 7994 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1008 ms
+2020-06-25 14:46:04.315  INFO 7994 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-25 14:46:04.467  INFO 7994 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-25 14:46:04.475  INFO 7994 --- [           main] jans.SalesSite.SalesSiteApplication      : Started SalesSiteApplication in 1.679 seconds (JVM running for 2.297)
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< jans:SalesSite >---------------------------
+[INFO] Building SalesSite 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) > test-compile @ SalesSite >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) < test-compile @ SalesSite <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) @ SalesSite ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-06-25 14:54:31.875  INFO 8482 --- [           main] jans.SalesSite.SalesSiteApplication      : Starting SalesSiteApplication on CarstenitzMBP15 with PID 8482 (/Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/target/classes started by cmutzlitz in /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app)
+2020-06-25 14:54:31.878  INFO 8482 --- [           main] jans.SalesSite.SalesSiteApplication      : No active profile set, falling back to default profiles: default
+2020-06-25 14:54:32.667  INFO 8482 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-25 14:54:32.676  INFO 8482 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-25 14:54:32.676  INFO 8482 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-25 14:54:32.787  INFO 8482 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-25 14:54:32.787  INFO 8482 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 872 ms
+2020-06-25 14:54:32.927  INFO 8482 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-25 14:54:33.067  INFO 8482 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-25 14:54:33.076  INFO 8482 --- [           main] jans.SalesSite.SalesSiteApplication      : Started SalesSiteApplication in 1.492 seconds (JVM running for 1.854)
+2020-06-25 14:54:43.016  INFO 8482 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-25 14:54:43.016  INFO 8482 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-25 14:54:43.021  INFO 8482 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+[{"header":{"queryId":"none","schema":"`OURPRICE` DOUBLE"}},
+
+
+
+{"row":{"columns":[1187.01]}},
+{"finalMessage":"Limit Reached"}]
+
+[{"header":{"queryId":"none","schema":"`OURPRICE` DOUBLE"}},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"row":{"columns":[1187.01]}},
+{"finalMessage":"Limit Reached"}]
+
+[{"header":{"queryId":"none","schema":"`OURPRICE` DOUBLE"}},
+
+
+
+{"row":{"columns":[1187.01]}},
+{"finalMessage":"Limit Reached"}]
+
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< jans:SalesSite >---------------------------
+[INFO] Building SalesSite 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) > test-compile @ SalesSite >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) < test-compile @ SalesSite <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) @ SalesSite ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-07-01 17:27:06.984  INFO 9058 --- [           main] jans.SalesSite.SalesSiteApplication      : Starting SalesSiteApplication on CarstenitzMBP15 with PID 9058 (/Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/target/classes started by cmutzlitz in /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app)
+2020-07-01 17:27:06.986  INFO 9058 --- [           main] jans.SalesSite.SalesSiteApplication      : No active profile set, falling back to default profiles: default
+2020-07-01 17:27:07.705  INFO 9058 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-01 17:27:07.714  INFO 9058 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 17:27:07.714  INFO 9058 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-01 17:27:07.903  INFO 9058 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 17:27:07.903  INFO 9058 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 880 ms
+2020-07-01 17:27:08.015  INFO 9058 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 17:27:08.160  INFO 9058 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-01 17:27:08.167  INFO 9058 --- [           main] jans.SalesSite.SalesSiteApplication      : Started SalesSiteApplication in 1.457 seconds (JVM running for 2.768)
+2020-07-01 18:33:14.960  INFO 9058 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 18:33:14.962  INFO 9058 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 18:33:14.976  INFO 9058 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+[{"header":{"queryId":"none","schema":"`OURPRICE` DOUBLE"}},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"row":{"columns":[1157.0625]}},
+
+{"finalMessage":"Limit Reached"}]
+
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< jans:SalesSite >---------------------------
+[INFO] Building SalesSite 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) > test-compile @ SalesSite >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ SalesSite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) < test-compile @ SalesSite <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) @ SalesSite ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-07-02 11:23:26.139  INFO 24452 --- [           main] jans.SalesSite.SalesSiteApplication      : Starting SalesSiteApplication on CarstenitzMBP15 with PID 24452 (/Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app/target/classes started by cmutzlitz in /Users/cmutzlitz/Demos/pricescraping/amazon-price-tracker/java_app)
+2020-07-02 11:23:26.142  INFO 24452 --- [           main] jans.SalesSite.SalesSiteApplication      : No active profile set, falling back to default profiles: default
+2020-07-02 11:23:26.933  INFO 24452 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-02 11:23:26.942  INFO 24452 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-02 11:23:26.942  INFO 24452 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-02 11:23:27.009  INFO 24452 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-02 11:23:27.009  INFO 24452 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 831 ms
+2020-07-02 11:23:27.148  INFO 24452 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-02 11:23:27.271  INFO 24452 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-02 11:23:27.278  INFO 24452 --- [           main] jans.SalesSite.SalesSiteApplication      : Started SalesSiteApplication in 1.38 seconds (JVM running for 1.62)
+2020-07-02 11:32:30.437  INFO 24452 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-02 11:32:30.438  INFO 24452 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-02 11:32:30.441  INFO 24452 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+[{"header":{"queryId":"none","schema":"`OURPRICE` DOUBLE"}},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"row":{"columns":[1157.0625]}},
+
+{"finalMessage":"Limit Reached"}]
+
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< jans:SalesSite >---------------------------
+[INFO] Building SalesSite 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) > test-compile @ SalesSite >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ SalesSite ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/cmutzlitz/Demos/ccloud/webinar-series/local/webinar3/java_app/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ SalesSite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/cmutzlitz/Demos/ccloud/webinar-series/local/webinar3/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ SalesSite ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/cmutzlitz/Demos/ccloud/webinar-series/local/webinar3/java_app/target/test-classes
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) < test-compile @ SalesSite <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:run (default-cli) @ SalesSite ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-09-09 17:28:00.853  INFO 56298 --- [           main] jans.SalesSite.SalesSiteApplication      : Starting SalesSiteApplication on CarstenitzMBP15 with PID 56298 (/Users/cmutzlitz/Demos/ccloud/webinar-series/local/webinar3/java_app/target/classes started by cmutzlitz in /Users/cmutzlitz/Demos/ccloud/webinar-series/local/webinar3/java_app)
+2020-09-09 17:28:00.855  INFO 56298 --- [           main] jans.SalesSite.SalesSiteApplication      : No active profile set, falling back to default profiles: default
+2020-09-09 17:28:01.550  INFO 56298 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-09 17:28:01.560  INFO 56298 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-09 17:28:01.560  INFO 56298 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-09-09 17:28:01.617  INFO 56298 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-09 17:28:01.617  INFO 56298 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 728 ms
+2020-09-09 17:28:01.724  INFO 56298 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-09 17:28:01.855  INFO 56298 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-09 17:28:01.862  INFO 56298 --- [           main] jans.SalesSite.SalesSiteApplication      : Started SalesSiteApplication in 1.296 seconds (JVM running for 1.574)

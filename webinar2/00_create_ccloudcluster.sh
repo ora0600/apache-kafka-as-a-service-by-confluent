@@ -35,7 +35,7 @@ security.protocol=SASL_SSL" > ccloud_user1.properties
 # create topic
 # topic in ccloud in source
 kafka-topics --create --bootstrap-server $CCLOUD_CLUSTERID1_BOOTSTRAP --topic cmorders_avro \
---replication-factor 3 --partitions 6 --command-config ./ccloud_user1.properties 
+--replication-factor 3 --partitions 1 --command-config ./ccloud_user1.properties 
 echo "Topic cmorders_avro created"
 kafka-topics --create --bootstrap-server $CCLOUD_CLUSTERID1_BOOTSTRAP --topic users \
 --replication-factor 3 --partitions 1 --command-config ./ccloud_user1.properties 
