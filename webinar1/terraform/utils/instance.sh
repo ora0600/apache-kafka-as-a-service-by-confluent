@@ -82,8 +82,12 @@ plugin.path=/usr/share/java/confluent-hub-components" > my_standalone-connect.pr
 echo "name=RssSourceConnectorDemo
 tasks.max=1
 connector.class=org.kaliy.kafka.connect.rss.RssSourceConnector
-rss.urls=https://www.kai-waehner.de/feed/ http://fetchrss.com/rss/5f4773a18a93f833108b45675f4772528a93f8f7048b4567.atom
+rss.urls=https://www.kai-waehner.de/feed/
+#rss.urls=https://www.kai-waehner.de/feed/ https://rss.app/feeds/djRu8z7eUSewRfWC.xml
 topic=rssfeeds" > rssfeed.properties
+
+chown ec2-user:ec2-user my_standalone-connect.properties
+chown ec2-user:ec2-user rssfeed.properties
 
 # Start as daemon
 #sudo KAFKA_HEAP_OPTS="-Xms128m -Xmx256M" connect-standalone -daemon ./my_standalone-connect.properties ./rssfeed.properties
