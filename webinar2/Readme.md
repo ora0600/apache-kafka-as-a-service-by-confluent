@@ -44,7 +44,7 @@ sudo tail -f /var/log/kafka/connectStandalone.out
 ```
 Now, Webinar1 setup is up and running and we can continue with webinar2
 
-## Start the Replicator setup - additional cluster and replicator
+## Start the Replicator setup and create connectors in dataflow cluster - create additional cluster for replicator
 Start the setup
 ```bash
 cd ../../webinar2
