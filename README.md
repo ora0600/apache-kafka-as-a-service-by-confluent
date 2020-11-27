@@ -78,7 +78,15 @@ How to access the Confluent Cloud and deal with different connectivities
  * site-to-site VPN
  * (Transit Gateway)
 
-### 5.Webinar: cost optimization, total cost of ownership
+### 5.Webinar: Building Microservices with Apache Kafka as Service in Cloud
+Let's build Java Springboot Microservices with Confluent Cloud
+ * CQRS pattern example
+ * Spring Cloud Streams library usage example with Kafka
+ * State Store for storing Microservice state and state recovery
+ * Microservices Decoupling and Microservices intercommunication
+ * Stateless and Stateful Microservices Scaling Up or Down
+ 
+### 6.Webinar: cost optimization, total cost of ownership
 The last session of one of the most importan. What are the costs, benefits, things to know.
 * Cost optimization (less traffic, storage)
   * compression
