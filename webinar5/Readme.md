@@ -9,17 +9,17 @@ Demo application to demonstrate building microservices using Springboot and Apac
 
 ![Application User Interface](images/appUI.png)
 
-Requirements to run it locally:
-* Java 8 or Java 11
-* Maven
-* Connectivity to Confluent Cloud
-
-This demo consist of two microservices build using Java Springboot:
-* Producer - is used to send messages to Kafka
-* Consumer - is used to retrieving messages from Kafka and storing them in local  state store. 
+This demo consist of two microservices which are using Java Springboot:
+* Bookmarks Producer - is used to send messages to Kafka
+* Bookmarks  Consumer - is used to retrieving messages from Kafka and storing them in local  state store. 
 
 Demo Application architecture
 ![Architecture](images/architecture.png)
+
+## Requirements to run it locally:
+* Java 8
+* Maven
+* Connectivity to Confluent Cloud
 
 ## Compile
 Compile microservices first:

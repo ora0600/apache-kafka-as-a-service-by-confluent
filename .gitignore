@@ -26,7 +26,15 @@ Temporary Items
 .apdisk
 
 # Java Ignores
+HELP.md
 target/
-.idea/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+.idea
+*.iws
 *.iml
+*.ipr
 *.properties
+.vscode/
+
