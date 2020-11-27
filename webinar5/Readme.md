@@ -21,36 +21,51 @@ Demo Application architecture
 * Maven
 * Connectivity to Confluent Cloud
 
-## Compile
-Compile microservices first:
-```bash
-mvn clean package
-```
-Check if compiled
+## Create topics in Confluent Cloud
+* Create a topic "bookmarks" in Confluent Cloud. For future scaling purposes I recommend to create a topic with 3 or more partitions.
 
-## Configure
-Configure connection to Confluent Cloud
-```bash
-edit application.properties
+## Configure the Producer properties
+Configure connection to Confluent Cloud and Topic to be used. Make sure that the topic already exists. Application is not allowed to create the new topic for you.
+You MUST set all properties in [/BookmarksProducer/src/main/resources/application.properties.EXAMPLE](/BookmarksProducer/src/main/resources/application.properties.EXAMPLE)
+
+Example of application.properties for Confluent Cloud:
 ```
-Check if saved
+server.port=8080
+
+spring.cloud.stream.kafka.binder.brokers=pkc-XXXXX.europe-west3.gcp.confluent.cloud:9092
+spring.cloud.stream.kafka.binder.configuration.security.protocol=SASL_SSL
+spring.cloud.stream.kafka.binder.configuration.sasl.mechanism=PLAIN
+spring.cloud.stream.kafka.binder.configuration.sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule   required username="XXXXX"   password="XXXXXXXXXX";
+spring.cloud.stream.kafka.binder.configuration.ssl.endpoint.identification.algorithm=https
+
+spring.cloud.stream.bindings.output.destination=bookmarks
+spring.cloud.stream.bindings.output.contentType=application/json
+```
 
 ## Start the Producer
-Start the Producer microservices
+Start the Producer microservices with your properties file
 ```bash
-cd ../../webinar5
+cd BookmarksProducer
+mvn spring-boot:run -Dspring.config.location=application.properties
 ```
+
+## Test the Producer
+Open your favorite browser and enter following url (assuming you have not changed the port 8080 in your properties file)
+```
+http://localhost:8080/bookmarksProducer/jan
+```
+Congrats you are logged in as a user "jan". You can change the name to anything you want. Bookmark events will be stored in the bookmarks topic in Kafka using this key! This means that all bookmark events from the same user will use the same partition.
+
+## Configure the Consumer properties
+TODO
 
 ## Start the Consumer
-Start the Consumer microservices
-```bash
-cd ../../webinar5
-```
+TODO
+
+## Test the Consumer
+TODO
 
 ## Stop the demo showcase
-To delete the complete environment:
-```bash
-cd webinar5
-```
+TODO
 
 
