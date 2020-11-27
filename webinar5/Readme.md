@@ -26,7 +26,7 @@ Demo Application architecture
 
 ## Configure the Producer properties
 Configure connection to Confluent Cloud and Topic to be used. Make sure that the topic already exists. Application is not allowed to create the new topic for you.
-You MUST set all properties in [/BookmarksProducer/src/main/resources/application.properties.EXAMPLE](/BookmarksProducer/src/main/resources/application.properties.EXAMPLE)
+You MUST set all properties in [/BookmarksProducer/src/main/resources/application.properties.EXAMPLE](/webinar5/BookmarksProducer/src/main/resources/application.properties.EXAMPLE)
 
 Example of application.properties for Confluent Cloud:
 ```
