@@ -24,3 +24,9 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Java Ignores
+target/
+.idea/
+*.iml
+*.properties
