@@ -7,7 +7,7 @@ Demo application to demonstrate building microservices using Springboot and Apac
 * All bookmarks are stored with some username
 * Read list of bookmarks for some user
 
-![Application User Interface](images/appUI.png =100x)
+![Application User Interface](images/appUI.png)
 
 Requirements to run it locally:
 * Java 8 or Java 11
