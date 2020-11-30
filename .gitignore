@@ -35,6 +35,9 @@ target/
 *.iws
 *.iml
 *.ipr
-*.properties
+application.properties
 .vscode/
+.classpath
+.project
+.settings
 
