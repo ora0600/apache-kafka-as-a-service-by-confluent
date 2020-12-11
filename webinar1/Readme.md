@@ -71,7 +71,7 @@ ll /usr/share/java/confluent-hub-components
 
 # try to start the standalone connector
 # connect standalone check the output, if no errors do CTRL+C and start as daemon
-sudo KAFKA_HEAP_OPTS="-Xms128m -Xmx256M" connect-standalone  ./my_standalone-connect.properties ./rssfeed.properties                                         
+sudo KAFKA_HEAP_OPTS="-Xms128m -Xmx256M" connect-standalone  ./my_standalone-connect.properties ./rssfeed.properties
 # Start standalone as daemon
 sudo KAFKA_HEAP_OPTS="-Xms128m -Xmx256M" connect-standalone -daemon ./my_standalone-connect.properties ./rssfeed.properties
 ```
@@ -91,11 +91,9 @@ Now, create a telegram Bot and link it to a channel. The setup is very easy:
    * give it name: my_rssfeedtestbot (close with enter)
    * give a username: my_rssfeedtestbot (close with enter)
    * write down the link t.me/my_rssfeedtestbot
-   * save the token e.g. 6672772772:ß09710923ohdhkjwjdhkajshd
+   * save the token e.g. AAA:BBBBBBB
    * try this curl https://api.telegram.org/bot<your token>
-   1341248921:AAE2ao5rTz20qOEMY4LYKltvx8uFIc5CRCk
-   curl https://api.telegram.org/bot1341248921:AAE2ao5rTz20qOEMY4LYKltvx8uFIc5CRCk/getme
-   * nect steps are optional:
+   * next steps are optional:
       * Add description: /setdescription
         * This Channel will inform you about interesting stories around Apache Kafka, Confluent, event streaming platforms, architecture pattern and real use cases.
       * /setabouttext
@@ -119,8 +117,10 @@ ssh -i ~/keys/hackathon-temp-key.pem ec2-user@public-ip
 
 # open the python script and change the correct data
 nano consumer_rssfeeds.py
-BOT_TOKEN = "6672772772:ß09710923ohdhkjwjdhkajshd"
+BOT_TOKEN = "AAA:BBBBBBB"
 CHANNEL_ID = "@mytestChannelRSSFEED"
+
+
 # save with CTRL+x and then enter
 
 # now start the python service 

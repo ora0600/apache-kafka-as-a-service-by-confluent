@@ -13,6 +13,11 @@ CCLOUD_KEY2=$(awk '/key/{print $NF}' apikey2)
 CCLOUD_DGENPAGEVIEWSID=$(awk '/id:/{print $NF}' datagen-pageviews)
 CCLOUD_DGENUSERSID=$(awk '/id:/{print $NF}' datagen-users)
 
+# DELETE CCLOUD cluster 
+ccloud login
+# environment CMWorkshops
+ccloud environment use $XX_CCLOUD_ENV
+
 # drop topic in ccloud
 kafka-topics --delete --bootstrap-server $CCLOUD_CLUSTERID1_BOOTSTRAP --topic cmorders_avro --command-config ./ccloud_user1.properties 
 echo "topic cmorders_avro deleted"
@@ -28,10 +33,6 @@ ccloud connector delete $CCLOUD_DGENUSERSID --cluster $CCLOUD_CLUSTERID1
 ccloud connector delete $CCLOUD_DGENPAGEVIEWSID --cluster $CCLOUD_CLUSTERID1
 echo "fully managed Connectors deleted"
 
-# DELETE CCLOUD cluster 
-ccloud login
-# environment CMWorkshops
-ccloud environment use $XX_CCLOUD_ENV
 
 # delete API Key
 ccloud api-key delete $CCLOUD_KEY2

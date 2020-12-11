@@ -60,6 +60,12 @@ kafka-topics --create --bootstrap-server $CCLOUD_CLUSTERID1_BOOTSTRAP --topic cm
 --replication-factor 3 --partitions 1 --command-config ./ccloud_user1.properties 
 kafka-topics --create --bootstrap-server $CCLOUD_CLUSTERID1_BOOTSTRAP --topic rssfeeds \
 --replication-factor 3 --partitions 1 --command-config ./ccloud_user1.properties 
+kafka-topics --create --bootstrap-server $CCLOUD_CLUSTERID1_BOOTSTRAP --topic bookmarks \
+--replication-factor 3 --partitions 1 --command-config ./ccloud_user1.properties 
+kafka-topics --create --bootstrap-server $CCLOUD_CLUSTERID1_BOOTSTRAP --topic bookmarks-store-repartition \
+--replication-factor 3 --partitions 1 --command-config ./ccloud_user1.properties 
+kafka-topics --create --bootstrap-server $CCLOUD_CLUSTERID1_BOOTSTRAP --topic bookmarks-store-changelog \
+--replication-factor 3 --partitions 1 --command-config ./ccloud_user1.properties 
 echo "Topic created"
 
 # create terraform vars

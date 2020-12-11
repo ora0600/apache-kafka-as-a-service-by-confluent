@@ -19,22 +19,22 @@ focused on these main Confluent Kafka components
 
 ## Webinar content:
 ### Title: Apache Kafka as a Service - Kafka in der Cloud - in GCP, Azure and AWS by Confluent fully-managed
-A webinar serie with  5  deep dive session
+A webinar serie with  6 deep dive sessions
 
 ### Content of the serie:
-Based on real stories like price scaping, marketing channels in telegram, micro services platform and AR APP Confluent will explain how easy it is to work with Confluent Cloud.
-
+Based on real stories like price scraping, marketing channels in telegram, micro services platform and others we will explain how easy it is to work with Confluent Cloud.
+It is secure, reliable and very fast.
 ### Webinar Serie
 Structure of a session:
   * Start with an overview - what to achieve
   * Wrap-up of last session (if this is not the first session)
   * Only a few slides
-  * We running live
+  * We running live [recording are available here](https://events.confluent.io/levelup-confluentcloud)
   * Step-by-Step explanation based on the current use case
   * Automatic script and explanation
   * Wrap-up and what is coming next
 
-### [1.Webinar](webinar1/Readme.md): Apache Kafka as a Service by Confluent Cloud Overview
+### [1.Webinar](webinar1/Readme.md): Telegram APP 
   * Confluent Cloud Service overview
     * Subscription types (direkt, marketplace)
     * create Cluster (UI, cli)
@@ -63,7 +63,7 @@ Structure of a session:
      * RSS feed connector
      * Replicator (OnPrem -> CCloud -> OnPrem)
 
-### [3.Webinar](webinar3/Readme.md): Doing Analytics with Apache Kafka as Service
+### [3.Webinar](webinar3/Readme.md): Doing Analytics with Apache Kafka as Service - Price Scraping the -1% Webshop
   * Provision ksqlDB APP
     * generate Data
     * do analytics in a realtime on streams of events
@@ -77,6 +77,7 @@ How to access the Confluent Cloud and deal with different connectivities
  * kafka-Proxy
  * site-to-site VPN
  * (Transit Gateway)
+ Please use the [PPT Deck](level-up-ccloud-webinarserie2020.pdf), there are no labs prepared.
 
 ### [5.Webinar](webinar5/Readme.md): Building Microservices with Apache Kafka as Service in Cloud
 Let's build Java Springboot Microservices with Confluent Cloud
@@ -98,6 +99,7 @@ The last session of one of the most importan. What are the costs, benefits, thin
 * Use of managed CP enterprise components with Confluent Cloud
 * Fully-managed vs. Self-managed components
 * TCO on-prem vs. Ccloud
+Please use the [PPT Deck](level-up-ccloud-webinarserie2020.pdf), there are no labs prepared.
 
 # License / Costs
 To play around with these samples here, you need to have a Confluent Cloud account.

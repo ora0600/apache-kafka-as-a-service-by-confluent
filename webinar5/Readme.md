@@ -21,30 +21,23 @@ Demo Application architecture
 * Maven
 * Connectivity to Confluent Cloud
 
+## Create Confluent Cloud cluster from  webinar 1
+```bash
+cd ../webinar1/
+source ccloud-vars
+```
+Start the demo
+```bash
+./00_create_ccloudcluster.sh
+```
+Create properties files fpr Producer and Consumer
+```bash
+./01_genProperties.sh
+```
 ## Create topics in Confluent Cloud
+Topics are created if you run `00_create_ccloudcluster.sh` `webinar1-dir`. Otherwise create it manually.
 * create topic "bookmarks" in Confluent Cloud. For future scaling purposes I recommend to create a topic with 3 or more partitions. This is a topic that will store all incoming bookmarks events.
 * create topics "bookmarks-store-repartition" and "bookmarks-store-changelog" in Confluent Cloud. These topics will be used by Kafka Streams. These topics must have the same number of partitions as your "bookmarks" topic.
-
-## Configure the Producer properties
-Configure connection to Confluent Cloud and Topic to be used. Make sure that the topic already exists. Application is not allowed to create the new topic for you.
-You MUST set all properties in [/BookmarksProducer/application.properties](/webinar5/BookmarksProducer/application.properties)
-
-Example of Producer application.properties for Confluent Cloud:
-```
-# Local port to run Producer Tomcat
-server.port=8080
-
-# Connection to Confluent Cloud
-spring.cloud.stream.kafka.binder.brokers=XXX.europe-west3.gcp.confluent.cloud:9092
-spring.cloud.stream.kafka.binder.configuration.security.protocol=SASL_SSL
-spring.cloud.stream.kafka.binder.configuration.sasl.mechanism=PLAIN
-spring.cloud.stream.kafka.binder.configuration.sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule   required username="XXX"   password="XXXXXX";
-spring.cloud.stream.kafka.binder.configuration.ssl.endpoint.identification.algorithm=https
-
-# Topic to use in Confluent Cloud to store incoming bookmarks events
-spring.cloud.stream.bindings.output.destination=bookmarks
-spring.cloud.stream.bindings.output.contentType=application/json
-```
 
 ## Start the Producer
 Start the Producer microservices with your properties file
@@ -59,35 +52,6 @@ Open your favorite browser and enter following url (assuming you have not change
 http://localhost:8080/bookmarksProducer/jan
 ```
 Congrats you are logged in as a user "jan". You can change the name to anything you want. Bookmark events will be stored in the bookmarks topic in Kafka using this key! This means that all bookmark events from the same user will use the same partition.
-
-## Configure the Consumer properties
-Configure connection to Confluent Cloud and your topic for Kafka Streams.
-You MUST set all properties in [/BookmarksConsumer/application.properties](/webinar5/BookmarksConsumer/application.properties)
-
-Example of Consumer application.properties for Confluent Cloud:
-```
-# application name and port where the application Tomcat will be running
-spring.application.name=kafkastream
-server.port=8090
-
-# incoming topic for Kafka Streams events processing
-spring.cloud.stream.bindings.reduce-in-0.destination=bookmarks
-# Kafka consumer group id
-spring.cloud.stream.kafka.streams.binder.applicationId=bookmarks
-
-# Kafka connection settings
-spring.cloud.stream.kafka.streams.binder.brokers=XXX.europe-west3.gcp.confluent.cloud:9092
-spring.cloud.stream.kafka.streams.binder.configuration.security.protocol=SASL_SSL
-spring.cloud.stream.kafka.streams.binder.configuration.sasl.mechanism=PLAIN
-spring.cloud.stream.kafka.streams.binder.configuration.sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule   required username="XXX"   password="XXXXXX";
-spring.cloud.stream.kafka.streams.binder.configuration.ssl.endpoint.identification.algorithm=https
-
-# Show Kafka where is the local state sore running
-spring.cloud.stream.kafka.streams.binder.configuration.application.server=localhost:${server.port}
-spring.cloud.stream.kafka.streams.binder.configuration.default.key.serde=org.apache.kafka.common.serialization.Serdes$StringSerde
-spring.cloud.stream.kafka.streams.binder.configuration.default.value.serde=org.apache.kafka.common.serialization.Serdes$StringSerde
-spring.cloud.stream.kafka.streams.binder.configuration.commit.interval.ms=1000
-```
 
 ## Start the Consumer
 Start the Consumer microservices with your properties file
@@ -105,6 +69,11 @@ Congrats you are logged in as a user "jan". Now you can view all the bookmarks t
 
 ## Stop the demo showcase
 Hit Control+C to stop the microservices.
+and Stop the cluster
+```bash
+cd ../webinar1
+./02_drop_ccloudcluster.sh
+```
 
 
 

@@ -27,7 +27,7 @@ ccloud kafka cluster delete $CCLOUD_CLUSTERID1
 ccloud kafka cluster list
 
 # Delete files
-echo "delete generated files rom disk"
+echo "delete generated files from disk"
 rm -rf $BASEDIR/basedir
 rm -rf $BASEDIR/apikey1
 rm -rf $BASEDIR/ccloud_user1.properties

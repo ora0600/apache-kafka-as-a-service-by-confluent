@@ -1,6 +1,5 @@
-# see youtube video https://youtu.be/Bg9r_yLk7VY
 # pip3 install requests bs4 confluent_kafka uuid
-# create topic competitionprices
+# topic competitionprices created
 # The -1 percent Webshop
 import sys
 import uuid
@@ -18,8 +17,6 @@ secret  = sys.argv[3] # API Secret
 
 # Product competition
 SHOP= 'Apple'
-#URL = 'https://www.amazon.de/Apple-MacBook-dual-core-Prozessor-10-Generation/dp/B0863YN36M'
-#URL = 'https://www.amazon.de/Apple-MacBook-dual-core-Prozessor-10-Generation/dp/B0863ZJ1T3/'
 URL = 'https://www.apple.com/de/shop/buy-mac/macbook-air'
 productName = 'Apple MacBook Air 13 Zoll'
 title = productName

@@ -32,8 +32,8 @@ import json
 import ccloud_lib_rssfeeds
 import time
 
-BOT_TOKEN = "6672772772:ß09710923ohdhkjwjdhkajshd"
-CHANNEL_ID = "@my-channel-link" 
+BOT_TOKEN = "AAA:BBBBBBB"
+CHANNEL_ID = "@mytestChannelRSSFEED" 
 
 def send_message(message):
     requests.get(f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={CHANNEL_ID}&text={message}')

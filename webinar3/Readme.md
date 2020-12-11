@@ -33,7 +33,7 @@ If the environment of webinar is not running, please start it:
 cd ../webinar1
 source ccloud-vars
 ./00_create_ccloudcluster.sh
-# this time we do need terraform
+# this time we do not need terraform
 ```
 Check if webinar1 environment is working via [Confluent Cloud UI](https://confluent.cloud/login)
 Now, Webinar1 setup is up and running and we can continue with webinar3
@@ -52,10 +52,14 @@ iterm Terminals with python price scraper will start automatically.
   * Topic
 Note: It will take a while till everything working fine in GUI.
 
-Now do the analytics
+Now do the analytics. You can use the UI or ksql cli
 ```bash
+# ksqli (only with confluent cp > 6.0)
+ksql -u APIKEY  -p APISECRET https://pksqlc-kaqldbID.europe-west1.gcp.confluent.cloud:443
 # users and pageviews
 ksql> CREATE STREAM pageviews WITH (kafka_topic='pageviews', value_format='AVRO');
+# use the ksqldb syntax for create a table: https://docs.ksqldb.io/en/latest/developer-guide/ksqldb-reference/create-table/
+# Please create table in UI
 ksql> CREATE TABLE users (id STRING PRIMARY KEY) WITH (kafka_topic='users', value_format='AVRO');
 ksql> CREATE STREAM pageviews_female AS SELECT users.id AS userid, pageid, regionid, gender FROM pageviews LEFT JOIN users ON pageviews.userid = users.id WHERE gender = 'FEMALE';
 ksql> CREATE STREAM pageviews_female_like_89 AS SELECT * FROM pageviews_female WHERE regionid LIKE '%_8' OR regionid LIKE '%_9';
@@ -63,10 +67,17 @@ ksql> CREATE TABLE pageviews_regions AS SELECT gender, regionid , COUNT(*) AS nu
 ksql> CREATE STREAM accomplished_female_readers WITH (value_format='JSON_SR') AS SELECT * FROM PAGEVIEWS_FEMALE WHERE CAST(SPLIT(PAGEID,'_')[2] as INT) >= 50;
 ksql> select avg(numusers) from PAGEVIEWS_REGIONS GROUP BY NUMUSERS EMIT CHANGES;
 # prices
-ksql> CREATE STREAM competitionprices (rowkey STRING KEY, shop VARCHAR, title VARCHAR, pricestr VARCHAR, pricefloat DOUBLE) WITH (KAFKA_TOPIC='competitionprices',   VALUE_FORMAT='JSON');
-ksql> CREATE TABLE competitionprices_table AS SELECT title as productname, shop, min(pricefloat) AS lowestprice_1minutes FROM competitionprices WINDOW TUMBLING (SIZE 1 MINUTES) GROUP BY title,shop EMIT CHANGES;
-kqsl> SELECT lowestprice_1minutes-(lowestprice_1minutes/100) as ourPrice from competitionprices_table emit changes limit 1;
+ksql> CREATE STREAM competitionprices (rowkey STRING KEY, shop VARCHAR, title VARCHAR, pricestr VARCHAR, pricefloat DOUBLE) WITH (KAFKA_TOPIC='competitionprices', VALUE_FORMAT='JSON');
+ksql> CREATE TABLE competitionprices_table AS
+  SELECT title as productname, shop, min(pricefloat) AS lowestprice_1minutes
+  FROM competitionprices WINDOW TUMBLING (SIZE 1 MINUTES)
+  GROUP BY title,shop
+  EMIT CHANGES;
+ksql> SELECT lowestprice_1minutes-(lowestprice_1minutes/100) as ourPrice from competitionprices_table emit changes limit 1;
+
 ```
+## Run Websop
+The webshop is a simple Java APP, visit the [shop](http://localhost:8080/sale.html) and click on here.
 
 ## Stop the demo showcase
 To delete the complete environment:
