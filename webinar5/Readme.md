@@ -32,6 +32,7 @@ Start the demo
 ```
 Create properties files fpr Producer and Consumer
 ```bash
+cd ../webinar5
 ./01_genProperties.sh
 ```
 ## Create topics in Confluent Cloud
